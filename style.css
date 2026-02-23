@@ -114,91 +114,115 @@ body {
     gap: 30px;
 }
 
-/* PROJECTS SECTION */
-.projects {
-    padding: 80px 40px;
-    text-align: center;
+/* Section Layout */
+.projects-section {
+  padding: 80px 0;
+  background: #000;
 }
 
-.projects h2 {
-    font-size: 2.4rem;
-    margin-bottom: 40px;
-    color: #111827;
+.projects-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* GRID */
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+/* Grid */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
 
-/* CARD */
+/* Card */
 .project-card {
-    background: #2684b3;
-    padding: 20px;
-    border-radius: 14px;
-    box-shadow: 0 4px 20px rgba(22, 2, 94, 0.08);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 32px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.15);
+  transition: all 0.35s ease;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* Hover Motion */
 .project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0, 150, 255, 0.35);
 }
 
-/* IMAGE WRAPPER */
-.image-wrapper {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.project-preview {
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover .project-preview {
-    transform: scale(1.05);
-}
-
-/* LOGO OVERLAY */
+/* Logo Container */
 .project-logo {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 55px;
-    opacity: 0.9;
-    filter: drop-shadow(0 0 6px rgba(0,0,0,0.4));
-    pointer-events: none;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
 }
 
-/* TEXT */
-.project-card h3 {
-    margin-top: 18px;
-    font-size: 1.3rem;
-    color: #111827;
+.project-logo img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
-.project-card p {
-    margin: 10px 0 20px;
-    color: #4b5563;
-    font-size: 0.95rem;
+/* Tag */
+.project-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: #cfcfcf;
+  margin-bottom: 12px;
 }
 
-/* BUTTON */
-.btn-primary {
-    display: inline-block;
-    padding: 10px 18px;
-    background: #111827;
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background 0.25s ease;
+/* Title */
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.project-desc {
+  font-size: 0.95rem;
+  color: #dcdcdc;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.project-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #ff3ec9, #6a5cff);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 60, 200, 0.4);
+}
+
+.project-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(255, 60, 200, 0.7);
 }
 
 .btn-primary:hover {
@@ -240,6 +264,44 @@ body {
     gap: 35px;
     justify-items: center;   /* centers each card */
     width: 100%;
+}
+
+/* Hide price until button is clicked */
+.hidden {
+  display: none;
+}
+
+/* Reveal animation */
+.price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--neon);
+  margin: 15px 0;
+  text-shadow: var(--neon-glow);
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Reveal button */
+.reveal-btn {
+  padding: 10px 22px;
+  background: var(--neon);
+  color: #000;
+  border: none;
+  border-radius: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: var(--neon-glow);
+}
+
+.reveal-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--neon), 0 0 50px var(--neon);
 }
 /* Highlight the middle plan */
 .featured {

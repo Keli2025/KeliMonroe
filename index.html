@@ -46,66 +46,75 @@
         </div>
     </section>
 
-<section id="projects" class="projects">
-    <h2>Recent Projects</h2>
+<section class="projects-section">
+  <div class="projects-container">
+    <h2 class="section-title">Recent Projects</h2>
 
     <div class="projects-grid">
 
-        <!-- Project 1 -->
-        <div class="project-card">
-            <div class="image-wrapper">
-                <img class="project-preview" src="kmonroeassets\neon pink fantasy ki.png" alt="Hilz Landing Page">
-                </div>
-        <h3>Hilz Landing Page</h3>
-            <p>A premium creator landing page with neon‑luxe vibes and smooth animations.</p>
-<a href="https://keli2025.github.io/Hilz/" class="btn-primary" target="_blank">View Project</a>
+      <!-- Project Card 1 -->
+      <article class="project-card">
+        <div class="project-logo">
+          <img src="images/neon pink fantasy ki.png" alt="Hilz Logo">
         </div>
+        <span class="project-tag">Landing Page</span>
+        <h3 class="project-title">Hilz Landing Page</h3>
+        <p class="project-desc">
+          A premium creator landing page with neon‑luxe vibes and smooth animations.
+        </p>
+       <a href="https://keli2025.github.io/Hilz/" class="project-btn" target="_blank">View Project</a>
+      </article>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-            <div class="image-wrapper">
-                <img class="project-preview" src="images/project2.jpg" alt="Brand Portfolio Site">
-            </div>
-
-            <h3>Brand Portfolio Site</h3>
-            <p>Minimal, elegant, and built for showcasing photography and personal branding.</p>
-
-            <a href="#" class="btn-primary" target="_blank">View Project</a>
+      <!-- Project Card 2 -->
+      <article class="project-card">
+        <div class="project-logo">
+          <img src="images/editedlogo1.PNG" alt="S&K Waste Logo">
         </div>
+        <span class="project-tag">Brand Portfolio</span>
+        <h3 class="project-title">Brand Portfolio Site</h3>
+        <p class="project-desc">
+          Minimal, elegant, and built for showcasing photography and personal branding.
+        </p>
+    <a href="https://keli2025.github.io/sandkremoval/" class="project-btn">View Project</a>
+      </article>
 
-        <!-- Project 3 -->
-        <div class="project-card">
-            <div class="image-wrapper">
-                <img class="project-preview" src="images/project3.jpg" alt="E‑Commerce Layout">
-            </div>
-
-            <h3>E‑Commerce Layout</h3>
-            <p>A clean, modern shop layout with product highlights and conversion‑focused design.</p>
-
-            <a href="#" class="btn-primary" target="_blank">View Project</a>
+      <!-- Project Card 3 -->
+      <article class="project-card">
+        <div class="project-logo">
+          <img src="images/ecommerce-icon.png" alt="E-Commerce Icon">
         </div>
-
+        <span class="project-tag">E‑Commerce</span>
+        <h3 class="project-title">E‑Commerce Layout</h3>
+        <p class="project-desc">
+          A clean, modern shop layout with product highlights and conversion‑focused design.
+        </p>
+       <a href="ecommerce.html" class="project-btn">View Project</a>
+      </article>
+    </div>
     </div>
 </section>
-
 <section id="pricing" class="pricing">
     <h2>Pricing</h2>
 
     <div class="pricing-grid">
+<div class="price-card">
+  <h3>Basic</h3>
 
-        <div class="price-card">
-            <h3>Basic</h3>
-            <p class="price">$300</p>
-            <ul>
-                <li>Custom 1‑page design</li>
-                <li>Mobile responsive</li>
-                <li>Basic SEO setup</li>
-            </ul>
-        </div>
+  <button class="reveal-btn" onclick="showPrice(this)">
+    View Price
+  </button>
 
+  <p class="price hidden">$300</p>
+
+  <ul>
+    <li>Custom 1‑page design</li>
+    <li>Mobile responsive</li>
+    <li>Basic SEO setup</li>
+  </ul>
+</div>
         <div class="price-card">
             <h3>Standard</h3>
-            <p class="price">$500</p>
+            <p class="price hidden">$500</p>
             <ul>
                 <li>Custom 3‑page design</li>
                 <li>Mobile responsive</li>
@@ -114,9 +123,9 @@
             </ul>
         </div>
 <div class="price-card coming-soon">
-    <div class="coming-soon-label">Coming Soon</div>
+    <div class="coming-soon-label"><span style="color: red;">Coming Soon</span></div>
     <h3>Premium</h3>    
-    <p class="price">$900</p>
+    <p class="price hidden">$900</p>
     <ul>
         <li>Full website build</li> 
         <li>Mobile responsive</li>
@@ -137,7 +146,7 @@
     <section id="contact" class="contact">
         <h2>Let’s Build Something Beautiful</h2>
         <p>Email: <strong>kelimonroe21websites@gmail.com</strong></p>
-        <a href="mailto:kelimonroe21websites@gmail.com" class="btn">Contact Me</a>
+        <a href="mailto:kelimonroe21websites@gmail.com" class="btn">Email Me</a>
     </section>
 
     <footer>

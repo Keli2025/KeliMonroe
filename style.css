@@ -20,14 +20,15 @@ body {
     width: 95vmin;
     height: 75vmin;
     background: url('site-logo.png') no-repeat center/contain;
-    opacity: 0.35;
-    filter: drop-shadow(0 0 35px rgba(255, 255, 255, 0.25));
+    opacity: 0.68;
+    filter: drop-shadow(0 0 55px rgba(255, 255, 255, 0.25));
     transform: translate(-50%, -50%);
     z-index: -9999;
     pointer-events: none;
     mix-blend-mode: screen;
     animation: shimmerPulse 12s ease-in-out infinite;
 }
+
 @keyframes shimmerPulse {
     0% {
         opacity: 0.28;

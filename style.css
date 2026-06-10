@@ -241,10 +241,6 @@ body {
   box-shadow: 0 0 12px rgba(255, 60, 200, 0.4);
 }
 
-.project-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 18px rgba(255, 60, 200, 0.7);
-}
 
 .btn-primary:hover {
     background: #1f2937;

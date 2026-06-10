@@ -12,20 +12,40 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
-
 /* Background Logo */
 .bg-logo {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 80vmin;
-    height: 60vmin;
-    background: url('site logo') no-repeat center/contain;
-    opacity: 0.18;
+    width: 95vmin;
+    height: 75vmin;
+    background: url('site-logo.png') no-repeat center/contain;
+    opacity: 0.35;
+    filter: drop-shadow(0 0 35px rgba(255, 255, 255, 0.25));
     transform: translate(-50%, -50%);
     z-index: -9999;
     pointer-events: none;
+    mix-blend-mode: screen;
+    animation: shimmerPulse 12s ease-in-out infinite;
 }
+@keyframes shimmerPulse {
+    0% {
+        opacity: 0.28;
+        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.15));
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        opacity: 0.42;
+        filter: drop-shadow(0 0 45px rgba(255, 255, 255, 0.35));
+        transform: translate(-50%, -50%) scale(1.015);
+    }
+    100% {
+        opacity: 0.28;
+        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.15));
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
 
 /* Navigation */
 .nav {
@@ -67,7 +87,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ff4fd8;
+    color: #71bbc4;
 }
 /* Hero */
 .hero {
@@ -89,7 +109,7 @@ body {
     display: inline-block;
     margin-top: 25px;
     padding: 12px 28px;
-    background: #ff4fd8;
+    background: #71bbc4;
     color: #fff;
     border-radius: 30px;
     text-decoration: none;
@@ -212,7 +232,7 @@ body {
   display: inline-block;
   padding: 12px 22px;
   border-radius: 50px;
-  background: linear-gradient(90deg, #ff3ec9, #6a5cff);
+  background: linear-gradient(90deg, #71bbc4, #6a5cff);
   color: #fff;
   font-weight: 600;
   text-decoration: none;
@@ -295,7 +315,7 @@ body {
 /* Reveal Button */
 .view-price-btn {
     padding: 10px 22px;
-    background: linear-gradient(90deg, #ff3ec9, #6a5cff);
+    background: linear-gradient(90deg, #71bbc4, #6a5cff);
     color: #fff;
     border: none;
     border-radius: 40px;
@@ -357,7 +377,7 @@ body {
 }
 /* Highlight the middle plan */
 .featured {
-    border: 2px solid #ff4fd8;
+    border: 2px solid #71bbc4;
     background: rgba(255,255,255,0.08);
     transform: scale(1.03);
 }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://keli2025.github.io/KeliMonroe/sitemap.xml

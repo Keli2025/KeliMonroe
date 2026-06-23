@@ -107,15 +107,16 @@ body {
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 28px;
-    background: #71bbc4;
-    color: #fff;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+      display: inline-block;
+  padding: 12px 22px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #71bbc4, #6a5cff);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 60, 200, 0.4);
+   
 }
 
 .btn:hover {
